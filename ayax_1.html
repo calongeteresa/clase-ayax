@@ -5,15 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
+
 <body>
 
+	 <ul>
+	 </ul>
 
 	<script>
 		const conexion = new XMLHttpRequest();
 		conexion.open("GET","prueba.txt");
 		conexion.send();
 		conexion.addEventListener("load",function(){
-			this.responseText;
+			this.responseText.split(",").forEach(prueba => {
+				let li = document.createElement("li");
+				li.innerHTML = palabra;
+				lista.appendChild(li);
+			});
 		})
 	</script>
 
