@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<script>
+		const conexion = new XMLHttpRequest();
+		conexion.open("GET","prueba.txt");
+		conexion.send();
+		conexion.addEventListener("load",function(){
+			this.responseText;
+		})
+	</script>
+
+</body>
+</html>
